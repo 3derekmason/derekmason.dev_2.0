@@ -34,13 +34,16 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
+button {
   font-weight: 500;
   color: var(--text-color);
   text-decoration: inherit;
+  background: none;
+  border: none;
 }
-a:hover {
+button:hover {
   color: var(--primary-light);
+  cursor: pointer;
 }
 
 body {

@@ -5,8 +5,7 @@ import App from "./App.svelte";
 const app = new App({
   target: document.getElementById("app"),
 });
-const navBtns = Array.from(document.getElementsByTagName("a"));
-
+const navBtns = Array.from(document.querySelectorAll("#nav-btn"));
 navBtns.forEach((btn) => {
   VanillaTilt.init(btn, {
     max: 25,
