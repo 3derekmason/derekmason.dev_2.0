@@ -2,7 +2,7 @@
 
 :root {
   --primary-main: #6cc644;
-  --primary-dark: ##33691e;
+  --primary-dark: #33691e;
   --primary-light: #76ff03;
   --primary-accent: #b2ff5960;
 
@@ -36,7 +36,7 @@
 
 a {
   font-weight: 500;
-  color: var(--primary-dark);
+  color: var(--text-color);
   text-decoration: inherit;
 }
 a:hover {

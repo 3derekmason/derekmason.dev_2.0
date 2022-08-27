@@ -12,7 +12,7 @@ navBtns.forEach((btn) => {
     max: 25,
     speed: 400,
     glare: true,
-    "max-glare": 0.2,
+    "max-glare": 0.33,
   });
 });
 
