@@ -1,16 +1,28 @@
 <script>
-
+  import NavBar from "./lib/components/NavBar.svelte";
 </script>
 
+
 <main>
-  <h1>derekmason.dev_2.0</h1>
-  <p>step into the arena</p>
+  <div class="container"></div>
+  <NavBar />
 </main>
 
 <style>
 
-  h1 {
-    color: var(--primary-main)
-  }
+main {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
 
+.container {
+  width: calc(100% - 240px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 </style>
