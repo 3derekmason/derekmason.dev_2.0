@@ -5,10 +5,15 @@ import App from "./App.svelte";
 const app = new App({
   target: document.getElementById("app"),
 });
-const navbar = document.getElementById("nav-container");
-VanillaTilt.init(navbar, {
-  max: 25,
-  speed: 400,
+const navBtns = Array.from(document.getElementsByTagName("a"));
+
+navBtns.forEach((btn) => {
+  VanillaTilt.init(btn, {
+    max: 25,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.2,
+  });
 });
 
 export default app;

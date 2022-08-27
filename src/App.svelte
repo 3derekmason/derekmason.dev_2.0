@@ -18,7 +18,7 @@ main {
 }
 
 .container {
-  width: calc(100% - 240px);
+  width: calc(100% - 120px);
   height: 100%;
   display: flex;
   justify-content: center;

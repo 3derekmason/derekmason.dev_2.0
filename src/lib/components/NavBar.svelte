@@ -6,26 +6,35 @@ import TextBox from "svelte-material-icons/TextBox.svelte";
 </script>
 
 <div id="nav-container">
-  <div class="icon"><Home size='3em'/></div>
-  <div class="icon"><CodeBraces size='3em' /></div>
-  <div class="icon"><TextBox size='3em' /></div>
-  <div class="icon"><HumanGreeting size='3em' /></div>
+  <a  href="/"><div class="icon"><Home size='3em'/></div></a>
+  <a  href="/"><div class="icon"><CodeBraces size='3em'/></div></a>
+  <a  href="/"><div class="icon"><TextBox size='3em'/></div></a>
+  <a  href="/"><div class="icon"><HumanGreeting size='3em'/></div></a>
 </div>
 
 <style>
   #nav-container {
-    width: 240px;
+    width: 120px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 24px;
-    box-shadow: 0 0 2px var(--secondary-light);
     transform-style: preserve-3d;
     transform: perspective(1000px);
   }
-  .icon {
-    transform: translateZ(30px)
+
+  a {
+    width: 96px;
+    height: 96px;
+    display: grid;
+    place-content: center;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+
   }
+  .icon {
+    transform: translateZ(20px)
+  }
+
 </style>
