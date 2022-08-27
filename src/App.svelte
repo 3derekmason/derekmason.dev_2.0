@@ -1,5 +1,9 @@
 <script>
+  import About from "./lib/pages/About.svelte";
+  import Home from "./lib/pages/Home.svelte";
   import NavBar from "./lib/components/NavBar.svelte";
+  import Projects from './lib/pages/Projects.svelte';
+import Resume from "./lib/pages/Resume.svelte";
   let view = 'home';
   const toggleView = (selection) => {
     view = selection;
@@ -9,24 +13,16 @@
 <main>
   <div class="container">
     {#if view === 'home'}
-    <div class="sec">
-      Home
-    </div>
+    <Home />
     {/if}
     {#if view === 'projects'}
-    <div class="sec">
-      Projects
-    </div>
+    <Projects />
     {/if}
     {#if view === 'resume'}
-    <div class="sec">
-      Resume
-    </div>
+  <Resume />
     {/if}
     {#if view === 'about'}
-    <div class="sec">
-      About
-    </div>
+   <About />
     {/if}
   </div>
   <NavBar toggleView={toggleView}/>
