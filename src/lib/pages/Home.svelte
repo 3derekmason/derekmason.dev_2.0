@@ -12,10 +12,10 @@ import Post from "svelte-material-icons/Post.svelte";
     <h1>Derek Mason.</h1>
     <h3>I am a full stack developer/personal trainer from Durango, Colorado. Specializing in building exceptional personal experiences; my focus is bringing accessible, human-friendly tools to all walks of life.</h3>
     <span class="social">
-      <a data-text="Github" href="/"><Github size="2em"/></a>
-      <a data-text="LinkedIn" href="/"><Linkedin size="2em"/></a>
-      <a data-text="Twitter" href="/"><Twitter size="2em"/></a>
-      <a data-text="Medium" href="/"><Post size="2em" /></a>
+      <a data-text="Github" href="https://github.com/3derekmason" target="_blank"><Github size="2em"/></a>
+      <a data-text="LinkedIn" href="https://linkedin.com/in/3derekmason" target="_blank"><Linkedin size="2em"/></a>
+      <a data-text="Twitter" href="https://twitter.com/3derekmason" target="_blank"><Twitter size="2em"/></a>
+      <a data-text="Medium" href="https://medium.com/@derekmason" target="_blank"><Post size="2em" /></a>
     </span>
   </div>
 </div>
