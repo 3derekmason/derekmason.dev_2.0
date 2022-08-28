@@ -10,7 +10,7 @@ import ArrowRightThick from "svelte-material-icons/ArrowRightThick.svelte";
       <p>Dear Derek,</p>
       <textarea rows="12" placeholder="Your message/comment here..."></textarea>
       <p>From,</p>
-      <input type="text" placeholder="Your name here">
+      <input type="text" placeholder="Sign here">
     </div>
     <div class="to">
       <div class="top">
@@ -55,7 +55,8 @@ import ArrowRightThick from "svelte-material-icons/ArrowRightThick.svelte";
     height: 32px;
     background: none;
     border: none;
-    font-family: var(--font-code);
+    font-size: 24px;
+    font-family: 'Handlee', cursive;
   }
 
   textarea {
