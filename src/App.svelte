@@ -4,6 +4,7 @@
   import NavBar from "./lib/components/NavBar.svelte";
   import Projects from './lib/pages/Projects.svelte';
 import Resume from "./lib/pages/Resume.svelte";
+import Contact from "./lib/pages/Contact.svelte";
   let view = 'home';
   const toggleView = (selection) => {
     view = selection;
@@ -24,6 +25,9 @@ import Resume from "./lib/pages/Resume.svelte";
     {#if view === 'about'}
    <About />
     {/if}
+    {#if view === 'contact'}
+   <Contact />
+    {/if}
   </div>
   <NavBar toggleView={toggleView}/>
 </main>
@@ -40,14 +44,6 @@ main {
 .container {
   width: calc(100% - 148px);
   height: 100%;
-}
-
-.sec {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 </style>

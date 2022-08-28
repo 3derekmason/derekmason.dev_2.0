@@ -2,6 +2,7 @@
 import CodeBraces from "svelte-material-icons/CodeBraces.svelte";
 import Home from "svelte-material-icons/Home.svelte";
 import HumanGreeting from "svelte-material-icons/HumanGreeting.svelte";
+import Mailbox from "svelte-material-icons/Mailbox.svelte";
 import TextBox from "svelte-material-icons/TextBox.svelte";
 
 export let toggleView;
@@ -20,6 +21,9 @@ export let toggleView;
   <button  id="nav-btn" data-text="About" on:click={() => {
     toggleView('about')
   }}><div class="icon"><HumanGreeting size='3em'/></div></button>
+    <button  id="nav-btn" data-text="Contact" on:click={() => {
+      toggleView('contact')
+    }}><div class="icon"><Mailbox size='3em'/></div></button>
 
 </div>
 
@@ -31,7 +35,7 @@ export let toggleView;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
     transform-style: preserve-3d;
     transform: perspective(1000px);
   }
