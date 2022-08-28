@@ -81,10 +81,12 @@ import ArrowRightThick from "svelte-material-icons/ArrowRightThick.svelte";
     justify-content: center;
     align-items: center;
     padding: 8px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
   }
 
   .to, .from {
-    padding: 4px;
+    padding: 8px;
     width: 50%;
     height: 100%;
     display: flex;
@@ -93,17 +95,21 @@ import ArrowRightThick from "svelte-material-icons/ArrowRightThick.svelte";
 
   .to {
     border-left: 0.5px solid #fefefe80;
+    transform-style: preserve-3d;
   }
 
   .top {
     height: 40%;
     display: flex;
     justify-content: flex-end;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
   }
 
   .stamp {
     height: 64px;
     width: 64px;
+    transform: translateZ(20px)
   }
 
   .row {
@@ -123,22 +129,22 @@ import ArrowRightThick from "svelte-material-icons/ArrowRightThick.svelte";
     text-transform: uppercase;
     font-size: 1em;
     font-weight: 400;
-    border-radius: 4px;
+    border-radius: 2px;
     border: none;
     width: 100%;
     height: 100%;
     background: var(--secondary-main);
-    box-shadow: 0 4px 0 var(--secondary-accent);
+    box-shadow: 0 3px 0 var(--secondary-accent);
     transition: 0.1s;
   }
   button:hover{
     color: var(--text-color);
     cursor: pointer;
-    box-shadow: 0 4px 0 var(--secondary-dark);
+    box-shadow: 0 2px 0 var(--secondary-dark);
     transition: 0.1s;
   }
   button:active {
     box-shadow: none;
-    transform: translateY(4px);
+    transform: translateY(3px);
   }
 </style>

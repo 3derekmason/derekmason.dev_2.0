@@ -24,7 +24,7 @@ VanillaTilt.init(homeMsg, {
   "full-page-listening": true,
 });
 VanillaTilt.init(postcard, {
-  max: 5,
+  max: 4,
   speed: 300,
   glare: true,
   "max-glare": 0.08,
