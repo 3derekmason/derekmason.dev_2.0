@@ -7,6 +7,7 @@ const app = new App({
 });
 const navBtns = Array.from(document.querySelectorAll("#nav-btn"));
 const homeMsg = document.getElementById("message");
+const postcard = document.getElementById("postcard");
 navBtns.forEach((btn) => {
   VanillaTilt.init(btn, {
     max: 15,
@@ -21,6 +22,14 @@ VanillaTilt.init(homeMsg, {
   speed: 200,
   reverse: true,
   "full-page-listening": true,
+});
+VanillaTilt.init(postcard, {
+  max: 5,
+  speed: 300,
+  glare: true,
+  "max-glare": 0.08,
+  reset: false,
+  reverse: true,
 });
 
 export default app;

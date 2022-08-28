@@ -3,7 +3,7 @@ import ArrowRightThick from "svelte-material-icons/ArrowRightThick.svelte";
 
 </script>
 
-<div class="contact">
+<div id="contact">
   <h2>Get in touch!</h2>
   <div id="postcard">
     <div class="from">
@@ -14,19 +14,21 @@ import ArrowRightThick from "svelte-material-icons/ArrowRightThick.svelte";
     </div>
     <div class="to">
       <div class="top">
-        <div class="stamp"></div>
+        <div class="stamp">
+          <button>Send <ArrowRightThick size="2em"/></button>
+        </div>
       </div>
       <div class="row">Derek Mason</div>
       <div class="row">Colorado, USA</div>
       <div class="row">3derekmason@gmail.com</div>
     </div>
   </div>
-  <button>Send <ArrowRightThick size="2em"/></button>
+
 </div>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
-  .contact{
+  #contact{
   height: 100%;
   width: 100%;
   display: flex;
@@ -102,7 +104,6 @@ import ArrowRightThick from "svelte-material-icons/ArrowRightThick.svelte";
   .stamp {
     height: 64px;
     width: 64px;
-    border: 1px solid var(--secondary-light-dull);
   }
 
   .row {
@@ -118,19 +119,20 @@ import ArrowRightThick from "svelte-material-icons/ArrowRightThick.svelte";
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 4px;
     text-transform: uppercase;
-    font-size: 1.25em;
-    font-weight: 600;
-    letter-spacing: 4px;
+    font-size: 1em;
+    font-weight: 400;
     border-radius: 4px;
-    width: 160px;
-    height: 40px;
+    border: none;
+    width: 100%;
+    height: 100%;
     background: var(--secondary-main);
     box-shadow: 0 4px 0 var(--secondary-dark);
   }
   button:hover{
-    color: var(--text-color)
+    color: var(--text-color);
+    cursor: pointer;
   }
   button:active {
     box-shadow: none;

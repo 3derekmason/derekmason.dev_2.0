@@ -3,33 +3,19 @@
   import Home from "./lib/pages/Home.svelte";
   import NavBar from "./lib/components/NavBar.svelte";
   import Projects from './lib/pages/Projects.svelte';
-import Resume from "./lib/pages/Resume.svelte";
-import Contact from "./lib/pages/Contact.svelte";
-  let view = 'home';
-  const toggleView = (selection) => {
-    view = selection;
-  }
+  import Resume from "./lib/pages/Resume.svelte";
+  import Contact from "./lib/pages/Contact.svelte";
 </script>
 
 <main>
   <div class="container">
-    {#if view === 'home'}
     <Home />
-    {/if}
-    {#if view === 'projects'}
     <Projects />
-    {/if}
-    {#if view === 'resume'}
-  <Resume />
-    {/if}
-    {#if view === 'about'}
-   <About />
-    {/if}
-    {#if view === 'contact'}
-   <Contact />
-    {/if}
+    <Resume />
+    <About />
+    <Contact />
   </div>
-  <NavBar toggleView={toggleView}/>
+  <NavBar />
 </main>
 
 <style>
@@ -44,6 +30,8 @@ main {
 .container {
   width: calc(100% - 148px);
   height: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 </style>

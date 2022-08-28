@@ -6,7 +6,7 @@ import Post from "svelte-material-icons/Post.svelte";
 
 </script>
 
-<div class="home">
+<div id="home">
   <div id="message">
     <h2>Hi, my name is</h2>
     <h1>Derek Mason.</h1>
@@ -21,7 +21,7 @@ import Post from "svelte-material-icons/Post.svelte";
 </div>
 
 <style>
-  .home{
+  #home{
   height: 100%;
   width: 100%;
   position: relative;

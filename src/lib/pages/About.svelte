@@ -2,12 +2,12 @@
 
 </script>
 
-<div class="about">
+<div id="about">
 <h1>Here is a little about me.</h1>
 </div>
 
 <style>
-  .about{
+  #about{
     height: 100%;
   width: 100%;
   position: relative;

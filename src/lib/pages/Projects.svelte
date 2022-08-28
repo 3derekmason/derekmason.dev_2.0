@@ -2,12 +2,12 @@
 
 </script>
 
-<div class="projects">
+<div id="projects">
 <h1>Here are my projects</h1>
 </div>
 
 <style>
-  .projects{
+  #projects{
     height: 100%;
   width: 100%;
   position: relative;

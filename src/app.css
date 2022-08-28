@@ -35,14 +35,14 @@
   -webkit-text-size-adjust: 100%;
 }
 
-button {
+a {
   font-weight: 500;
   color: var(--text-color);
   text-decoration: inherit;
   background: none;
   border: none;
 }
-button:hover {
+a:hover {
   color: var(--primary-light);
   cursor: pointer;
 }

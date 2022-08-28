@@ -1,30 +1,27 @@
 <script>
-import CodeBraces from "svelte-material-icons/CodeBraces.svelte";
-import Home from "svelte-material-icons/Home.svelte";
-import HumanGreeting from "svelte-material-icons/HumanGreeting.svelte";
-import Mailbox from "svelte-material-icons/Mailbox.svelte";
-import TextBox from "svelte-material-icons/TextBox.svelte";
-
-export let toggleView;
+  import CodeBraces from "svelte-material-icons/CodeBraces.svelte";
+  import Home from "svelte-material-icons/Home.svelte";
+  import HumanGreeting from "svelte-material-icons/HumanGreeting.svelte";
+  import Mailbox from "svelte-material-icons/Mailbox.svelte";
+  import TextBox from "svelte-material-icons/TextBox.svelte";
 </script>
 
 <div id="nav-container">
-  <button  id="nav-btn" data-text="Home" on:click={() => {
-    toggleView('home')
-  }}><div class="icon"><Home size='3em'/></div></button>
-  <button  id="nav-btn" data-text="Projects" on:click={() => {
-    toggleView('projects')
-  }}><div class="icon"><CodeBraces size='3em'/></div></button>
-  <button  id="nav-btn" data-text="Resume" on:click={() => {
-    toggleView('resume')
-  }}><div class="icon"><TextBox size='3em'/></div></button>
-  <button  id="nav-btn" data-text="About" on:click={() => {
-    toggleView('about')
-  }}><div class="icon"><HumanGreeting size='3em'/></div></button>
-    <button  id="nav-btn" data-text="Contact" on:click={() => {
-      toggleView('contact')
-    }}><div class="icon"><Mailbox size='3em'/></div></button>
-
+  <a href="#home" id="nav-btn" data-text="Home">
+    <div class="icon"><Home size='3em'/></div>
+  </a>
+  <a href="#projects" id="nav-btn" data-text="Projects">
+    <div class="icon"><CodeBraces size='3em'/></div>
+  </a>
+  <a href="#resume" id="nav-btn" data-text="Resume">
+    <div class="icon"><TextBox size='3em'/></div>
+  </a>
+  <a href="#about" id="nav-btn" data-text="About">
+    <div class="icon"><HumanGreeting size='3em'/></div>
+  </a>
+  <a href="#contact" id="nav-btn" data-text="Contact">
+    <div class="icon"><Mailbox size='3em'/></div>
+  </a>
 </div>
 
 <style>
