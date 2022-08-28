@@ -6,13 +6,21 @@ const app = new App({
   target: document.getElementById("app"),
 });
 const navBtns = Array.from(document.querySelectorAll("#nav-btn"));
+const homeMsg = document.getElementById("message");
 navBtns.forEach((btn) => {
   VanillaTilt.init(btn, {
-    max: 25,
-    speed: 400,
+    max: 15,
+    speed: 300,
     glare: true,
     "max-glare": 0.33,
+    reverse: true,
   });
+});
+VanillaTilt.init(homeMsg, {
+  max: 5,
+  speed: 200,
+  reverse: true,
+  "full-page-listening": true,
 });
 
 export default app;
