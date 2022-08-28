@@ -1,6 +1,19 @@
 <script>
 import ArrowRightThick from "svelte-material-icons/ArrowRightThick.svelte";
 
+let newMessage = {
+  from: '',
+  email: '',
+  body: '',
+}
+const mailMessage = () => {
+  console.log(JSON.stringify(newMessage))
+  newMessage = {
+    from: '',
+    email: '',
+    body: '',
+  }
+}
 </script>
 
 <div id="contact">
@@ -8,15 +21,15 @@ import ArrowRightThick from "svelte-material-icons/ArrowRightThick.svelte";
   <div id="postcard">
     <div class="from">
       <p>Dear Derek,</p>
-      <textarea rows="12" placeholder="Your message/comment here..."></textarea>
+      <textarea rows="12" placeholder="Your message/comment here..." bind:value={newMessage.body}></textarea>
       <p>From,</p>
-      <input type="text" placeholder="Sign here">
+      <input type="text" placeholder="Sign here" bind:value={newMessage.from}>
     </div>
     <div class="to">
       <div class="top">
-        <input class="email" type="email" placeholder="Return address">
+        <input class="email" type="email" placeholder="Return address" bind:value={newMessage.email}>
         <div class="stamp">
-          <button>Mail <ArrowRightThick size="2em"/></button>
+          <button on:click={mailMessage}>Mail <ArrowRightThick size="2em"/></button>
         </div>
       </div>
       <div class="row">Derek Mason</div>
