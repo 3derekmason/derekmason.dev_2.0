@@ -15,7 +15,7 @@ import ArrowRightThick from "svelte-material-icons/ArrowRightThick.svelte";
     <div class="to">
       <div class="top">
         <div class="stamp">
-          <button>Send <ArrowRightThick size="2em"/></button>
+          <button>Mail <ArrowRightThick size="2em"/></button>
         </div>
       </div>
       <div class="row">Derek Mason</div>
@@ -128,11 +128,14 @@ import ArrowRightThick from "svelte-material-icons/ArrowRightThick.svelte";
     width: 100%;
     height: 100%;
     background: var(--secondary-main);
-    box-shadow: 0 4px 0 var(--secondary-dark);
+    box-shadow: 0 4px 0 var(--secondary-accent);
+    transition: 0.1s;
   }
   button:hover{
     color: var(--text-color);
     cursor: pointer;
+    box-shadow: 0 4px 0 var(--secondary-dark);
+    transition: 0.1s;
   }
   button:active {
     box-shadow: none;
