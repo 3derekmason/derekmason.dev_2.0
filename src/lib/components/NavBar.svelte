@@ -7,6 +7,7 @@
 </script>
 
 <div id="nav-container">
+  <p>Menu</p>
   <a href="#home" id="nav-btn" data-text="Home">
     <div class="icon"><Home size='3em'/></div>
   </a>
@@ -36,7 +37,10 @@
     transform-style: preserve-3d;
     transform: perspective(1000px);
   }
-
+  p{
+    font-family: var(--font-code);
+    cursor: default;
+  }
   #nav-btn {
     width: 96px;
     height: 96px;
@@ -52,6 +56,7 @@
   left: 50%;
   transform: translate(40px, -50%);
   pointer-events: none;
+  font-family: var(--font-code);
   font-size: 2em;
   font-weight: 700;
   transition-duration: 0.5s;

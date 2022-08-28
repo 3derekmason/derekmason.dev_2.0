@@ -14,6 +14,7 @@ import ArrowRightThick from "svelte-material-icons/ArrowRightThick.svelte";
     </div>
     <div class="to">
       <div class="top">
+        <input class="email" type="email" placeholder="Return address">
         <div class="stamp">
           <button>Mail <ArrowRightThick size="2em"/></button>
         </div>
@@ -70,6 +71,16 @@ import ArrowRightThick from "svelte-material-icons/ArrowRightThick.svelte";
 
   input:focus, textarea:focus {
     outline: none;
+  }
+
+  .email {
+    width: 80%;
+    font-family: var(--font-code);
+    font-size: 14px;
+    padding: 4px;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-bottom: 1px solid var(--secondary-light-dull);
   }
 
   #postcard {
