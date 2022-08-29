@@ -3,7 +3,7 @@
 </script>
 
 <div id="resume">
-  <div class="head">
+  <div id="resume-head">
     <h1>Derek Mason</h1>
     <span class="contact">
       <h4>Denver, CO</h4>
@@ -45,23 +45,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 16px;
   }
 
   h1{
     font-size: 2em;
+    transform: translateZ(10px)
   }
 
   h4, p {
     margin: 0;
   }
-  .head {
+  #resume-head {
     width: 100%;
     height: 96px;
     display: flex;
     flex-direction: column;
     align-items: center;
    justify-content: space-around;
+   transform-style: preserve-3d;
+    transform: perspective(1000px);
   }
 
   .contact {
@@ -69,6 +73,7 @@
     justify-content: center;
     align-items: center;
     gap: 4px;
+    transform: translateZ(20px)
   }
 
   .section{
