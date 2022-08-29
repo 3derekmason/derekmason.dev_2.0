@@ -51,12 +51,26 @@
   }
 
   h1{
+    font-family: var(--font-code);
     font-size: 2em;
     transform: translateZ(10px)
   }
 
+  h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+
+  h4, a {
+    color: var(--primary-main)
+  }
+
   h4, p {
     margin: 0;
+  }
+
+  p {
+    font-family: var(--font-code);
   }
   #resume-head {
     width: 100%;
@@ -67,6 +81,7 @@
    justify-content: space-around;
    transform-style: preserve-3d;
     transform: perspective(1000px);
+    margin-bottom: 16px;
   }
 
   .contact {
