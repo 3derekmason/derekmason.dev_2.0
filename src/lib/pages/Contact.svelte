@@ -70,6 +70,7 @@ const mailMessage = () => {
   justify-content: center;
   align-items: center;
   gap: 24px;
+  background: linear-gradient(var(--bg-fade), transparent);
   }
 
   h2 {

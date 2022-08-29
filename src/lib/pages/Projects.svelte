@@ -15,5 +15,6 @@
   scroll-snap-stop: always;
   display: grid;
   place-content: center;
+  background: linear-gradient(transparent, var(--bg-fade));
   }
 </style>

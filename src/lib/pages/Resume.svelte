@@ -47,6 +47,7 @@
     align-items: center;
     justify-content: center;
     padding: 16px;
+    background: linear-gradient(var(--bg-fade), transparent);
   }
 
   h1{
