@@ -17,6 +17,15 @@
     <span class="section-title">
       <h2>TECHNICAL SKILLS</h2>
     </span>
+    <div class="row">
+      <p><strong>Front End</strong> | HTML,  JavaScript, NextJS, React, Redux, RedwoodJS, Svelte,  Vue,  CSS, Sass, MaterialUI, Vuetify</p>
+    </div>
+    <div class="row">
+      <p><strong>Back End</strong> | NodeJS, Express, PostgreSQL, MongoDB, MySQL, Ruby</p>
+    </div>
+    <div class="row">
+      <p><strong>Testing & Development</strong> | Jest, Playwright, Vitest,  AWS, Heroku, Vercel</p>
+    </div>
   </div>
   <div class="section">
     <span class="section-title">
@@ -48,6 +57,17 @@
     justify-content: center;
     padding: 16px;
     background: linear-gradient(var(--bg-fade), transparent);
+    overflow-y: auto;
+  }
+
+  .row {
+    min-height: 24px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   h1{
@@ -67,10 +87,6 @@
 
   h4, p {
     margin: 0;
-  }
-
-  p {
-    font-family: var(--font-code);
   }
   #resume-head {
     width: 100%;
@@ -94,6 +110,13 @@
 
   .section{
     width: 90%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+
 
   }
   .section-title {
