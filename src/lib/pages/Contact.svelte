@@ -9,6 +9,10 @@ let newMessage = {
 let thanks = false;
 let move = false;
 const mailMessage = () => {
+  if (newMessage.body === ''){
+    alert('A message would be more interesting with some text!')
+    return;
+  }
   fetch('https://dev-mail.vercel.app/api/mail', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
