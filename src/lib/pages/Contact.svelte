@@ -6,19 +6,35 @@ let newMessage = {
   email: '',
   body: '',
 }
+let thanks = false;
+let move = false;
 const mailMessage = () => {
-  console.log(JSON.stringify(newMessage))
+  fetch('https://dev-mail.vercel.app/api/mail', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify(newMessage)
+		})
+			.then((data) => console.log(data))
+			.catch((err) => console.error(err));
   newMessage = {
     from: '',
     email: '',
     body: '',
   }
+  move = true;
+  setTimeout(() => {
+    thanks = true;
+  }, 1000)
+
 }
 </script>
 
 <div id="contact">
   <h2>Get in touch!</h2>
-  <div id="postcard">
+  {#if thanks}
+  <div class="thanks"><h3>Thank you, I look forward to reading your message!</h3><a href="#home" on:click={() => {move = false; thanks = false;}}>Back to home</a></div>
+  {:else}
+  <div id="postcard" class={move ? 'move' : ''}>
     <div class="from">
       <p>Dear Derek,</p>
       <textarea rows="12" placeholder="Your message/comment here..." bind:value={newMessage.body}></textarea>
@@ -37,7 +53,7 @@ const mailMessage = () => {
       <div class="row">3derekmason@gmail.com</div>
     </div>
   </div>
-
+{/if}
 </div>
 
 <style>
@@ -96,6 +112,20 @@ const mailMessage = () => {
     border-bottom: 1px solid var(--secondary-light-dull);
   }
 
+  .thanks {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8px;
+    animation: fadeIn 0.5s;
+  }
+  .thanks a {
+    color: var(--primary-main)
+  }
   #postcard {
     background: #fefefe20;
     border-radius: 4px;
@@ -107,6 +137,10 @@ const mailMessage = () => {
     padding: 8px;
     transform-style: preserve-3d;
     transform: perspective(1000px);
+  }
+
+  .move {
+    animation:  mail 2s;
   }
 
   .to, .from {
@@ -170,5 +204,25 @@ const mailMessage = () => {
   button:active {
     box-shadow: none;
     transform: translateY(3px);
+  }
+
+  @keyframes mail {
+    0% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(1000px, -300px);
+      opacity: 0.1;
+    }
+  }
+
+  @keyframes fadeIn {
+    0%{
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 </style>
