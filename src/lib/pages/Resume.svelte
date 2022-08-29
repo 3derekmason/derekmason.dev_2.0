@@ -3,7 +3,32 @@
 </script>
 
 <div id="resume">
-<h1>Here's my resume</h1>
+  <div class="head">
+    <h1>Derek Mason</h1>
+    <h4>Denver, CO | 3derekmason@gmail.com | 970-551-9044</h4>
+    <p>Lifelong avid learner.</p>
+
+  </div>
+  <div class="section">
+    <span class="section-title">
+      <h2>TECHNICAL SKILLS</h2>
+    </span>
+  </div>
+  <div class="section">
+    <span class="section-title">
+      <h2>SOFTWARE DEVELOPMENT</h2>
+    </span>
+  </div>
+  <div class="section">
+    <span class="section-title">
+      <h2>PROFESSIONAL EXPERIENCE</h2>
+    </span>
+  </div>
+  <div class="section">
+    <span class="section-title">
+      <h2>EDUCATION</h2>
+    </span>
+  </div>
 </div>
 
 <style>
