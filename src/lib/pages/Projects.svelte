@@ -17,7 +17,7 @@ onMount(() => {
 
 <div id="projects">
   <h2>Recent Projects:</h2>
-  <div class="container">
+  <div id="proj-container">
     {#each projectData as project}
     <div><h3>{project.title}</h3></div>
     {/each}
@@ -37,10 +37,11 @@ onMount(() => {
   align-items: center;
   background: var(--bg-color);
   }
-  .container {
-    width: 80%;
+  #proj-container {
+    width: 85%;
     height: 80%;
-    border: 1px solid var(--highlight-color);
+    box-shadow: 0 0 4px var(--highlight-light);
+    background: radial-gradient(ellipse at bottom, var(--highlight-light), 1%, transparent), radial-gradient(ellipse at right, var(--highlight-light), 1%, transparent);
     display: flex;
     justify-content: center;
     align-items: center;

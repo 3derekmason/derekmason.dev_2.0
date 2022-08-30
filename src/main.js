@@ -7,6 +7,7 @@ const app = new App({
 });
 const navBtns = Array.from(document.querySelectorAll("#nav-btn"));
 const homeMsg = document.getElementById("message");
+const projectcontainer = document.getElementById("proj-container");
 const resumeHead = document.getElementById("resume-head");
 const postcard = document.getElementById("postcard");
 navBtns.forEach((btn) => {
@@ -23,6 +24,13 @@ VanillaTilt.init(homeMsg, {
   speed: 200,
   reverse: false,
   "full-page-listening": true,
+});
+VanillaTilt.init(projectcontainer, {
+  max: 2,
+  speed: 300,
+  glare: true,
+  "max-glare": 0.04,
+  reset: false,
 });
 VanillaTilt.init(resumeHead, {
   max: 10,
