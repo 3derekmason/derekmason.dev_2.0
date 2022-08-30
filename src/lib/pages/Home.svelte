@@ -31,7 +31,7 @@ import Post from "svelte-material-icons/Post.svelte";
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(var(--bg-fade), transparent);
+  background: var(--bg-color);
   }
   #message {
     width: 60%;

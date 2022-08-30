@@ -36,7 +36,7 @@ const mailMessage = () => {
 <div id="contact">
   <h2>Get in touch!</h2>
   {#if thanks}
-  <div class="thanks"><h3>Thank you, I look forward to reading your message!</h3><a href="#home" on:click={() => {move = false; thanks = false;}}>Back to home</a></div>
+  <div class="thanks"><h3>Thank you, I look forward to reading your message!</h3><button class="reset" on:click={() => {move = false; thanks = false;}}>Send something else?</button></div>
   {:else}
   <div id="postcard" class={move ? 'move' : ''}>
     <div class="from">
@@ -70,7 +70,7 @@ const mailMessage = () => {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  background: linear-gradient(var(--bg-fade), transparent);
+  background: var(--bg-color);
   }
 
   h2 {
@@ -128,8 +128,8 @@ const mailMessage = () => {
     padding: 8px;
     animation: fadeIn 0.5s;
   }
-  .thanks a {
-    color: var(--primary-main)
+  .thanks button {
+    height: 44px;
   }
   #postcard {
     background: #fefefe20;

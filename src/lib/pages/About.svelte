@@ -18,6 +18,6 @@
     align-items: center;
     justify-content: center;
     padding: 16px;
-    background: linear-gradient(transparent, var(--bg-fade));
+    background: var(--bg-color);
   }
 </style>

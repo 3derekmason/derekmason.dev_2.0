@@ -21,7 +21,7 @@ navBtns.forEach((btn) => {
 VanillaTilt.init(homeMsg, {
   max: 5,
   speed: 200,
-  reverse: true,
+  reverse: false,
   "full-page-listening": true,
 });
 VanillaTilt.init(resumeHead, {

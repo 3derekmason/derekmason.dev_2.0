@@ -130,7 +130,7 @@
     padding: 16px;
     padding-top: 64px;
     padding-bottom: 64px;
-    background: linear-gradient(var(--bg-fade), transparent);
+    background: var(--bg-color);
     overflow-y: auto;
   }
 
