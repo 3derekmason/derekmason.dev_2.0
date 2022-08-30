@@ -1,5 +1,6 @@
 <script>
 import { onMount } from 'svelte';
+import ProjectTile from '../components/ProjectTile.svelte';
 let projectData = []
 const fetchProjectData = () => {
   fetch('https://dev-mail.vercel.app/api/projects').then((res) => res.json()).then((data) => {
@@ -17,9 +18,9 @@ onMount(() => {
 
 <div id="projects">
   <h2>Recent Projects:</h2>
-  <div id="proj-container">
+  <div class="proj-container">
     {#each projectData as project}
-    <div><h3>{project.title}</h3></div>
+    <ProjectTile dataObject={project} />
     {/each}
   </div>
 </div>
@@ -37,7 +38,7 @@ onMount(() => {
   align-items: center;
   background: var(--bg-color);
   }
-  #proj-container {
+  .proj-container {
     width: 85%;
     height: 80%;
     box-shadow: 0 0 4px var(--highlight-light);
