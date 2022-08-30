@@ -7,10 +7,10 @@
     <h1>Derek Mason</h1>
     <span class="contact">
       <h4>Denver, CO</h4>
-     | <a href="/">3derekmason@gmail.com</a> | <a href="/">970-551-9044</a>
+     | <a href="mailto:3derekmason@gmail.com">3derekmason@gmail.com</a> | <a href="tel:+19705519044">970-551-9044</a>
     </span>
 
-    <p>Lifelong avid learner.</p>
+    <h5>Lifelong avid learner.</h5>
 
   </div>
   <div class="section">
@@ -185,6 +185,11 @@
   h4, p {
     margin: 0;
   }
+
+  h5 {
+    margin: 0;
+    padding: 0;
+  }
   strong {
     font-family: var(--font-code);
   }
@@ -235,5 +240,6 @@
     place-content: center;
     border-bottom: 0.5px solid var(--primary-main);
     margin-bottom: 12px;
+    letter-spacing: 2px;
   }
 </style>
