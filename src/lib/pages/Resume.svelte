@@ -164,7 +164,8 @@
   h1{
     font-family: var(--font-code);
     font-size: 2em;
-    transform: translateZ(10px)
+    transform: translateZ(10px);
+    margin-bottom: 8px;
   }
 
   h2 {
@@ -183,6 +184,9 @@
 
   h4, p {
     margin: 0;
+  }
+  strong {
+    font-family: var(--font-code);
   }
 
   em {
