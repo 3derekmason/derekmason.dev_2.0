@@ -23,12 +23,14 @@
 main {
   margin: 0;
   width: 100vw;
+  max-width: 100vw;
   height: 100vh;
   display: flex;
+  overflow: hidden;
 }
 
 .container {
-  width: calc(100% - 148px);
+  width: calc(100vw - 148px);
   height: 100%;
   overflow: hidden;
   scroll-behavior: smooth;
