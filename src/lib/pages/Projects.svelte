@@ -39,14 +39,14 @@ onMount(() => {
   background: var(--bg-color);
   }
   .proj-container {
-    width: 85%;
+    width: 100%;
     height: 80%;
-    box-shadow: 0 0 4px var(--highlight-light);
     background: radial-gradient(ellipse at bottom, var(--highlight-light), 1%, transparent), radial-gradient(ellipse at right, var(--highlight-light), 1%, transparent);
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 16px;
     overflow-y: auto;
+    padding: 16px;
   }
 </style>
