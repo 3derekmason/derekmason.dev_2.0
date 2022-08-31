@@ -40,7 +40,7 @@ export let dataObject;
 
 <style>
   #tile {
-    padding: 16px;
+    padding: 24px;
     width: 85%;
     height: 420px;
     box-shadow: 0.4px 0.6px 3px var(--highlight-light);
@@ -79,7 +79,7 @@ export let dataObject;
 
   .about {
     width: 100%;
-    height: 60%;
+    height: 50%;
     padding: 8px;
     display: flex;
     font-family: var(--font-code);
@@ -94,6 +94,10 @@ export let dataObject;
     display: flex;
     align-items: center;
     font-size: 14px;
+  }
+
+  .win {
+    height: 25%;
   }
 
   .media {
