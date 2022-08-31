@@ -10,7 +10,9 @@ export let dataObject;
   <span class="tile-head">
     <h2>{dataObject.title}</h2>
     <div class="links">
+      {#if dataObject.deployed}
       <a href={'https://' + dataObject.deployed} target="_blank">Go to app <CodeBracesBox size="28px"/></a>
+      {/if}
       <a href={'https://' + dataObject.code} target="_blank">View code <CodeBraces size="24px" /></a>
     </div>
   </span>
