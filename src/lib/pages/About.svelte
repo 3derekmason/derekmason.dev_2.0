@@ -5,7 +5,7 @@
 <div id="about">
   <div class="bio">
     <div class="row">
-      <img src="public/images/kace.jpeg" alt="Derek and Kace">
+      <img src="/images/kace.jpeg" alt="Derek and Kace">
       <p>After helping my community for over four years as a preschool teacher and personal trainer, I discovered and honed my passion for improving the lives of others.</p>
     </div>
     <p>In 2020 I began my adventure into software development. Today, I continue to learn and push my creative limits, with a main focus on building accessible, inclusive, and enjoyable experiences.</p>

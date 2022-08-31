@@ -5,7 +5,7 @@
 </script>
 
 <div class="badge">
-  <img src={`/public/images/${language}.svg`} alt={language}>
+  <img src={`/images/${language}.svg`} alt={language}>
 </div>
 
 <style>
