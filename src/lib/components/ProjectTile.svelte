@@ -2,6 +2,7 @@
   import CodeBraces from "svelte-material-icons/CodeBraces.svelte";
   import CodeBracesBox from "svelte-material-icons/CodeBracesBox.svelte";
 
+  import Gallery from "./Gallery.svelte";
   import Badge from "./Badge.svelte";
 
 export let dataObject;
@@ -26,7 +27,7 @@ export let dataObject;
     </div>
     <div class="media">
       <div class="photos">
-        <img src={dataObject.imgs[0]} alt="">
+        <Gallery photos={dataObject.imgs} />
       </div>
       <div class="langs">
         <p>Built with</p>
@@ -111,10 +112,6 @@ export let dataObject;
   .photos {
     width: 100%;
     height: 85%;
-  }
-
-  img {
-    width: 95%;
   }
 
   .links {

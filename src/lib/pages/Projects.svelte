@@ -53,5 +53,15 @@ onMount(() => {
 
   h2{
     height: 64px;
+    transform: translateY(32px);
+    background: linear-gradient(
+    25deg,
+    var(--primary-main),
+    80%,
+    var(--primary-light),
+    var(--highlight-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   }
 </style>
