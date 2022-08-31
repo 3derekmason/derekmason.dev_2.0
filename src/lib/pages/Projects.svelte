@@ -44,9 +44,9 @@ onMount(() => {
     box-shadow: 0 0 4px var(--highlight-light);
     background: radial-gradient(ellipse at bottom, var(--highlight-light), 1%, transparent), radial-gradient(ellipse at right, var(--highlight-light), 1%, transparent);
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 16px;
+    overflow-y: auto;
   }
 </style>

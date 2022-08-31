@@ -22,11 +22,10 @@
 
 main {
   margin: 0;
-  width: 100vw;
+  width: auto;
   max-width: 100vw;
   height: 100vh;
   display: flex;
-  overflow: hidden;
 }
 
 .container {

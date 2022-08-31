@@ -29,6 +29,7 @@ export let dataObject;
     <a href={'https://' + dataObject.deployed} target="_blank">Go to app.</a>
     <a href={'https://' + dataObject.code} target="_blank">View source code.</a>
   </div>
+
 </div>
 
 <style>
