@@ -2,6 +2,8 @@
   import CodeBraces from "svelte-material-icons/CodeBraces.svelte";
   import CodeBracesBox from "svelte-material-icons/CodeBracesBox.svelte";
 
+  import Badge from "./Badge.svelte";
+
 export let dataObject;
 
 </script>
@@ -26,7 +28,12 @@ export let dataObject;
       <div class="photos">
         <img src={dataObject.imgs[0]} alt="">
       </div>
-      <div class="langs"><p>Built with</p> {dataObject.langs}</div>
+      <div class="langs">
+        <p>Built with</p>
+        {#each dataObject.langs as lang}
+        <Badge language={lang} />
+        {/each}
+      </div>
     </div>
   </div>
 </div>

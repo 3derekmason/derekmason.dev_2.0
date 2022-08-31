@@ -7,6 +7,7 @@ const fetchProjectData = () => {
    const datajson = JSON.parse(data.message);
    datajson.forEach((item) => {
     item.imgs = item.imgs.split('+/+')
+    item.langs = item.langs.split('+/+')
    })
    projectData = datajson;
   })
