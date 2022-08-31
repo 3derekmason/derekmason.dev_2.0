@@ -34,7 +34,9 @@ export let dataObject;
     padding: 16px;
     width: 85%;
     height: 420px;
-    box-shadow: 0 0.5px 1px var(--highlight-light);
+    box-shadow: 0.4px 0.6px 3px var(--highlight-light);
+    backdrop-filter: blur(12px);
+    border-radius: 4px;
   }
 
   .tile-head {

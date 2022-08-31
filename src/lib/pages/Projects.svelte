@@ -27,7 +27,7 @@ onMount(() => {
 
 <style>
   #projects{
-    height: 100%;
+  height: 100%;
   width: 100%;
   position: relative;
   scroll-snap-align: start;
@@ -40,13 +40,17 @@ onMount(() => {
   }
   .proj-container {
     width: 100%;
-    height: 80%;
+    height: calc(100% - 64px);
     background: radial-gradient(ellipse at bottom, var(--highlight-light), 1%, transparent), radial-gradient(ellipse at right, var(--highlight-light), 1%, transparent);
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
     overflow-y: auto;
     padding: 16px;
+  }
+
+  h2{
+    height: 64px;
   }
 </style>

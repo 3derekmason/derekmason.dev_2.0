@@ -130,7 +130,7 @@
     padding: 16px;
     padding-top: 64px;
     padding-bottom: 64px;
-    background: var(--bg-color);
+    background: radial-gradient(ellipse at top, var(--highlight-light), 1%, var(--bg-color));
     overflow-y: auto;
   }
 
