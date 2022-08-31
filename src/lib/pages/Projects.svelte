@@ -53,6 +53,7 @@ onMount(() => {
 
   h2{
     height: 64px;
+    text-transform: uppercase;
     transform: translateY(32px);
     background: linear-gradient(
     25deg,
