@@ -68,7 +68,7 @@ onMount(() => {
 
    @media (max-width: 600px){
    #projects {
-    padding-top: 88px;
+    padding-top: 44px;
    }
   }
 </style>

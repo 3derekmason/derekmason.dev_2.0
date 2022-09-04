@@ -58,11 +58,11 @@
 
     #about {
       padding: 8px;
-      padding-top: 80px;
+      padding-top: 40px;
     }
 
     img {
-      display: none;
+      width: 40px;
     }
     .row {
       flex-direction: column;
