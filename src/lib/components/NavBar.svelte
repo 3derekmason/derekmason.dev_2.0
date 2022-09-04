@@ -54,7 +54,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(40px, -40%);
+  transform: translate(40px, -30%);
   pointer-events: none;
   font-family: var(--font-code);
   font-size: 2em;
