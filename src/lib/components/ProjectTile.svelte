@@ -146,4 +146,25 @@ export let dataObject;
     gap: 8px;
   }
 
+  @media (max-width: 600px){
+
+    #tile{
+      padding: 4px;
+      width: 90%;
+      height: 540px;
+    }
+    .tile-head {
+      justify-content: flex-start;
+    }
+    .links{
+      justify-content: center;
+      gap: 4px;
+    }
+    a {
+      width: 120px;
+      padding: 2px;
+      gap: 4px;
+    }
+  }
+
 </style>

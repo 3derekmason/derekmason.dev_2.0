@@ -243,4 +243,10 @@
     margin-bottom: 12px;
     letter-spacing: 2px;
   }
+
+  @media (max-width:600px){
+    #resume {
+      padding-top: 120px;
+    }
+  }
 </style>

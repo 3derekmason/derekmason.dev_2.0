@@ -71,4 +71,21 @@
     transform: translateZ(20px)
   }
 
+  @media (max-width: 600px){
+    #nav-container{
+      flex-direction: row;
+      width: 400px;
+      height: 88px;
+      position: absolute;
+      transform: translateY(-45%);
+      gap: 4px;
+    }
+    p {
+      display: none;
+    }
+    #nav-btn:before {
+      display: none;
+    }
+  }
+
 </style>

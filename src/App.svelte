@@ -35,4 +35,16 @@ main {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 600px){
+  main {
+    flex-direction: column;
+    padding-top: 88px;
+    height: 800px;
+  }
+  .container{
+    width: 100%;
+    height: calc(100vh - 88px);
+  }
+}
+
 </style>

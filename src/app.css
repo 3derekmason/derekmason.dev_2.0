@@ -73,3 +73,9 @@ h1 {
   max-height: 100vh;
   margin: 0 auto;
 }
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+}

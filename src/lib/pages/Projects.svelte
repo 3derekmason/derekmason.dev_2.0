@@ -65,4 +65,10 @@ onMount(() => {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   }
+
+   @media (max-width: 600px){
+   #projects {
+    padding-top: 88px;
+   }
+  }
 </style>

@@ -37,9 +37,9 @@ import Post from "svelte-material-icons/Post.svelte";
     width: 60%;
     height: 100%;
     display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
 
   }
 
@@ -97,5 +97,14 @@ import Post from "svelte-material-icons/Post.svelte";
   a:hover::after{
     opacity: 1;
     transform: translateX(8px);
+  }
+
+  @media (max-width: 600px){
+    .social {
+      gap: 24px;
+    }
+    #message {
+      width: 90%;
+    }
   }
 </style>

@@ -53,4 +53,19 @@
   a:hover {
     color: #fff;
   }
+
+  @media (max-width: 600px){
+
+    #about {
+      padding: 8px;
+      padding-top: 80px;
+    }
+
+    img {
+      display: none;
+    }
+    .row {
+      flex-direction: column;
+    }
+  }
 </style>
