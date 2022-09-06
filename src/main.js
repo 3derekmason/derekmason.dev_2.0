@@ -1,10 +1,12 @@
 import "./app.css";
 import VanillaTilt from "vanilla-tilt";
 import App from "./App.svelte";
+import setScreenSize from "vanilla-screen";
 
 const app = new App({
   target: document.getElementById("app"),
 });
+setScreenSize();
 const navBtns = Array.from(document.querySelectorAll("#nav-btn"));
 const homeMsg = document.getElementById("message");
 const resumeHead = document.getElementById("resume-head");

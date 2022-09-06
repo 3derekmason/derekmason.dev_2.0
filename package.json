@@ -16,6 +16,7 @@
   "dependencies": {
     "relative-time-ago": "^1.0.8",
     "svelte-material-icons": "^2.0.4",
+    "vanilla-screen": "^1.0.2",
     "vanilla-tilt": "^1.7.2"
   }
 }

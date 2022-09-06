@@ -11,7 +11,7 @@
   <a href="#home" id="nav-btn" data-text="Home">
     <div class="icon"><Home size='3em'/></div>
   </a>
-  <a href="#projects" id="nav-btn" data-text="Projects">
+  <a href="#projects" id="nav-btn" data-text="Projects" disabled>
     <div class="icon"><CodeBraces size='3em'/></div>
   </a>
   <a href="#resume" id="nav-btn" data-text="Resume">
