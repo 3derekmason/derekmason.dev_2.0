@@ -56,11 +56,11 @@
     <div class="row">
       <div class="item">
         <span class="item-title">
-          <h3>Story Base  <em>Personal collection of  stories and articles</em></h3>
+          <h3>dmpm  <em>Personal Javascript Package Manager</em></h3>
         </span>
         <ul>
-          <li>Full stack application built with SvelteKit to host my own blog posts and articles.</li>
-          <li>Markdown files stored with MongoDB, then converted and displayed as templated HTML.</li>
+          <li>Full stack application built with NuxtJS to host my own NPM packages and libraries.</li>
+          <li>View info about each package published. Total downloads > 1100.</li>
         </ul>
       </div>
     </div>
@@ -132,6 +132,7 @@
     padding-bottom: 64px;
     background: radial-gradient(ellipse at top, var(--highlight-light), 1%, var(--bg-color));
     overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .row {
